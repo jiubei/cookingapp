@@ -191,7 +191,7 @@ yellow: #d8ca48
   height: 100%;
   width: 100%;
   background-image: url("public/main-wallpaper.jpg");
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -207,6 +207,7 @@ yellow: #d8ca48
   margin-top: 40px;
   padding-left: 20px;
   align-content: center;
+  overflow: scroll;
 }
 
 .search-answers {
