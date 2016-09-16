@@ -20,12 +20,12 @@ $(document).ready(function() {
 
       if (res.count === 0) {
         $(".search-window").append(
-          "<div class='search-answers'><a href='https://www.mcdelivery.com.sg/sg/'><div class='searched-titles'>McDelivery</div><img class='food-img' src='public/mcd.png' alt='Delicious Food' /></a></div> <div class='search-answers'><a href='http://www.pizzahut.com.sg/delivery/'><div class='searched-titles'>Pizza Hut Delivery</div><img class='food-img' src='public/phd.jpg' alt='Delicious Food' /></a></div><div class='search-answers'><a href='https://www.kfcdelivery.com.sg/'><div class='searched-titles'> KFC Delivery </div><img class='food-img' src='public/kfcd.png' alt='Delicious Food' /></a></div>"
+          "<div class='search-answers'><a href='https://www.mcdelivery.com.sg/sg/' target='_blank'><div class='searched-titles'>McDelivery</div><img class='food-img' src='public/mcd.png' alt='Delicious Food' /></a></div> <div class='search-answers'><a href='http://www.pizzahut.com.sg/delivery/'target='_blank'><div class='searched-titles'>Pizza Hut Delivery</div><img class='food-img' src='public/phd.jpg' alt='Delicious Food' /></a></div><div class='search-answers'><a href='https://www.kfcdelivery.com.sg/'target='_blank'><div class='searched-titles'> KFC Delivery </div><img class='food-img' src='public/kfcd.png' alt='Delicious Food' /></a></div>"
       );
     } else {
         for (var m = 0; m < res.count; m++) {
           $(".search-window").append(
-            "<div class='search-answers'><a href="+ res.recipes[m].f2f_url +"><div class='searched-titles'>" + res.recipes[m].title + "</div><img class='food-img' src='"+ res.recipes[m].image_url +"' alt='Delicious Food' /><a class='recipe' href="+ res.recipes[m].source_url +" >Get the Recipe!</a> </a></div>"
+            "<div class='search-answers'><a href="+ res.recipes[m].f2f_url +" target='_blank'><div class='searched-titles'>" + res.recipes[m].title + "</div><img class='food-img' src='"+ res.recipes[m].image_url +"' alt='Delicious Food' /><a class='recipe' href="+ res.recipes[m].source_url +" target='_blank'>Get the Recipe!</a> </a></div>"
           );
         }
       }
