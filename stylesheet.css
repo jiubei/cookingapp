@@ -207,7 +207,8 @@ yellow: #d8ca48
   left: 330px;
   height: calc(100% - 120px);
   width: calc(100% - 350px);
-  margin-top: 40px;
+  padding-top: 30px;
+  margin-top: 10px;
   padding-left: 20px;
   align-content: center;
   overflow: scroll;
