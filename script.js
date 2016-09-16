@@ -16,7 +16,7 @@ $(document).ready(function() {
       .fail(failFunction);
 
     function successFunction(res, status, req) {
-      console.log(res);
+      // console.log(res);
 
       if (res.count === 0) {
         $(".search-window").append(
@@ -38,44 +38,11 @@ $(document).ready(function() {
 
   // end of the call of food2fork API
 
-  // food2fork sample API
-
-  // var f2fsearch = {
-  //   "count": 3,
-  //   "recipes": [{
-  //     "publisher": "Two Peas and Their Pod",
-  //     "f2f_url": "http://food2fork.com/view/54384",
-  //     "title": "Stovetop Avocado Mac and Cheese",
-  //     "source_url": "http://www.twopeasandtheirpod.com/stovetop-avocado-mac-and-cheese/",
-  //     "recipe_id": "54384",
-  //     "image_url": "http://static.food2fork.com/avocadomacandcheesedc99.jpg",
-  //     "social_rank": 100.0,
-  //     "publisher_url": "http://www.twopeasandtheirpod.com"
-  //   }, {
-  //     "publisher": "Eats Well With Others",
-  //     "f2f_url": "http://food2fork.com/view/609d86",
-  //     "title": "Recipe: Avocado Mac and Cheese {eat.live.be}",
-  //     "source_url": "http://www.joanne-eatswellwithothers.com/2012/06/recipe-avocado-mac-and-cheese-eatlivebe.html",
-  //     "recipe_id": "609d86",
-  //     "image_url": "http://static.food2fork.com/7398885294_ecfdf83f64_z7bd7.jpg",
-  //     "social_rank": 99.32344255646608,
-  //     "publisher_url": "http://www.joanne-eatswellwithothers.com"
-  //   }, {
-  //     "publisher": "Tasty Kitchen",
-  //     "f2f_url": "http://food2fork.com/view/a5cdee",
-  //     "title": "Avocado Spinach Mac &amp; Cheese",
-  //     "source_url": "http://tastykitchen.com/recipes/main-courses/avocado-spinach-mac-cheese/",
-  //     "recipe_id": "a5cdee",
-  //     "image_url": "http://static.food2fork.com/photo114410x4465a82.jpg",
-  //     "social_rank": 34.824278384591125,
-  //     "publisher_url": "http://tastykitchen.com"
-  //   }]
-  // };
-
   var ingredients = [{
     name: "apples",
     common: true
-  }, {
+  },
+  {
     name: "bacon",
     common: true
   }, {
@@ -196,9 +163,6 @@ $(document).ready(function() {
     name: "dragonfruit",
     common: false
   }];
-
-
-
 
   // Choice Button function
   var commonIngredients = new Array(0);

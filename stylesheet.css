@@ -96,7 +96,7 @@ yellow: #d8ca48
 }
 
 #ingredient-search .search-function {
-  margin-left: 15px;
+  margin-left: 10px;
   padding: 5px 40px;
   border: 2px solid #d4d4d4;
   outline: none;
@@ -121,6 +121,7 @@ yellow: #d8ca48
 
 .ui-menu-item:hover {
   background-color: #d4d4d4;
+  transition: background-color 0.3s;
 }
 
 .ui-menu {
@@ -133,6 +134,8 @@ yellow: #d8ca48
   padding-bottom: 3px;
   border-bottom: 2px solid #d4d4d4;
   padding-left: 40px;
+  background-color: white;
+  transition: background-color 0.3s;
 }
 
 .ui-helper-hidden-accessible {
